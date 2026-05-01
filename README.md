@@ -1,68 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Gluva</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">GLUVA</a>
-    <div class="nav-links">
-      <a href="index.html#how-it-works">How It Works</a>
-      <a href="index.html#platform">Platform</a>
-      <a href="index.html#research">Research</a>
-      <a href="contact.html" class="nav-cta">Contact Us</a>
-    </div>
-  </div>
-</nav>
+# Gluva Website
 
-<section class="contact-hero">
-  <div class="container">
-    <div class="section-label">Legal</div>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: April 2026</p>
-  </div>
-</section>
+Employer Risk Intelligence Platform — marketing website.
 
-<section class="privacy-body">
-  <div class="container">
-    <div class="privacy-content">
-      <h2>Overview</h2>
-      <p>Gluva, a product of Self Fund Platforms LLC, is committed to protecting the privacy of individuals and organizations that interact with our platform. This policy describes how we collect, use, and protect information on our website and platform.</p>
+## Structure
 
-      <h2>Information We Collect</h2>
-      <p>On our website, we collect information you voluntarily provide through our contact form — including your name, email address, company name, and role. We do not collect any health information through this website.</p>
-      <p>Our employer wellness platform operates under separate Business Associate Agreements with each employer plan sponsor and handles health plan claims data exclusively under those HIPAA-compliant agreements.</p>
+```
+gluva-website/
+├── index.html          # Main landing page
+├── contact.html        # Contact / early access form
+├── privacy.html        # Privacy policy
+├── css/
+│   └── style.css       # All styles
+├── js/
+│   └── main.js         # Nav, scroll, form behavior
+└── README.md
+```
 
-      <h2>How We Use Information</h2>
-      <p>Information submitted through our contact form is used solely to respond to your inquiry and communicate with you about Gluva's products and services. We do not sell or share your contact information with third parties for marketing purposes.</p>
+## Deploying to GitHub Pages
 
-      <h2>Health Data</h2>
-      <p>Employer health plan claims data and individual participant wellness data is handled under HIPAA-compliant Business Associate Agreements with each employer plan sponsor. All health data is used solely for the purpose of delivering the Gluva program as described in the applicable service agreement. Individual participant data is never sold or disclosed to third parties without authorization.</p>
+1. Push this folder to a GitHub repository
+2. Go to Settings → Pages
+3. Set source to `main` branch, root folder
+4. Your site will be live at `https://yourusername.github.io/gluva-website`
 
-      <h2>Cookies and Analytics</h2>
-      <p>This website may use basic analytics to understand visitor behavior and improve our content. We do not use advertising cookies or share analytics data with advertising networks.</p>
+## Deploying to Custom Domain (gluva.com)
 
-      <h2>Contact</h2>
-      <p>For privacy inquiries, please contact us at <a href="mailto:info@gluva.com">info@gluva.com</a>.</p>
-    </div>
-  </div>
-</section>
+1. Add a `CNAME` file to the root with your domain: `gluva.com`
+2. In GitHub Pages settings, add your custom domain
+3. Update your DNS: add a CNAME record pointing to `yourusername.github.io`
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0;">
-      <div class="fb-left">© 2026 Gluva. All rights reserved. A Self Fund Platforms LLC product.</div>
-      <div class="fb-right"><a href="index.html">Home</a><a href="contact.html">Contact</a></div>
-    </div>
-  </div>
-</footer>
-<script src="js/main.js"></script>
-</body>
-</html>
+## Contact Form
+
+The contact form currently shows a success message on submit. To connect it to a real email backend, replace the `handleSubmit` function in `js/main.js` with a POST request to a service like:
+- **Formspree**: https://formspree.io — add `action="https://formspree.io/f/YOUR_ID"` to the form
+- **Netlify Forms**: Works automatically if hosted on Netlify
+- **EmailJS**: Client-side email sending
+
+## Fonts
+
+Uses Google Fonts:
+- Playfair Display (display headings)
+- DM Sans (body text)
+- DM Mono (labels, badges, monospace elements)
+
+## Colors
+
+| Token   | Hex       | Usage                  |
+|---------|-----------|------------------------|
+| --navy  | #1B3A6B   | Primary dark           |
+| --teal  | #0D7A8E   | Accent / CTA           |
+| --green | #15803D   | Success states         |
+| --gold  | #D97706   | Highlight metrics      |
+| --slate | #475569   | Body text              |
+| --dark  | #0F1F3D   | Hero / CTA backgrounds |
+
+## Notes
+
+- No names of founders included per brief
+- Dashboard preview uses representative data — clearly labeled as such
+- "In Development" badge on dashboard section sets honest expectations
+- Research citations are accurate and sourced from project study files
+- Early access CTA throughout — captures interest before full launch

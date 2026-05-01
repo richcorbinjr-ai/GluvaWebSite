@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Gluva</title>
-<meta name="description" content="Get in touch with the Gluva team to learn more about early employer and broker partnerships.">
+<title>Gluva — Employer Risk Intelligence</title>
+<meta name="description" content="Gluva connects CGM-guided wellness outcomes to employer health plan claims data — making wellness ROI measurable for self-funded employers for the first time.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,14 +12,15 @@
 </head>
 <body>
 
+<!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">GLUVA</a>
     <div class="nav-links">
-      <a href="index.html#how-it-works">How It Works</a>
-      <a href="index.html#platform">Platform</a>
-      <a href="index.html#research">Research</a>
-      <a href="contact.html" class="nav-cta active">Contact Us</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#platform">Platform</a>
+      <a href="#research">Research</a>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
     </div>
     <button class="nav-burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -27,160 +28,300 @@
   </div>
 </nav>
 
+<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="index.html#how-it-works" onclick="closeMobile()">How It Works</a>
-  <a href="index.html#platform" onclick="closeMobile()">Platform</a>
-  <a href="index.html#research" onclick="closeMobile()">Research</a>
+  <a href="#how-it-works" onclick="closeMobile()">How It Works</a>
+  <a href="#platform" onclick="closeMobile()">Platform</a>
+  <a href="#research" onclick="closeMobile()">Research</a>
   <a href="contact.html">Contact Us</a>
 </div>
 
-<section class="contact-hero">
-  <div class="container">
-    <div class="section-label">Get in Touch</div>
-    <h1>Let's Talk About<br>Your Employer Plan</h1>
-    <p>Gluva is currently accepting early employer and broker partners. We work with self-funded employers ranging from 2,000 to 20,000 covered lives. Reach out to start a conversation.</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      Employer Risk Intelligence Platform
+    </div>
+    <h1 class="hero-h1">
+      Wellness Programs<br>
+      <em>That Prove Their ROI</em>
+    </h1>
+    <p class="hero-sub">Gluva connects continuous glucose monitoring outcomes to employer health plan claims data — giving self-funded employers documented proof that their wellness investment reduces costs.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn-primary">Request a Demo</a>
+      <a href="#how-it-works" class="btn-ghost">See How It Works</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">67<span class="stat-unit">%</span></div>
+        <div class="stat-lbl">of US workers in<br>self-funded plans</div>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <div class="stat-num">$22<span class="stat-unit">K+</span></div>
+        <div class="stat-lbl">annual GLP-1 cost<br>per member</div>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <div class="stat-num">3.7<span class="stat-unit">×</span></div>
+        <div class="stat-lbl">documented employer<br>ROI on program cost</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="contact-body">
+<!-- PROBLEM -->
+<section class="problem">
   <div class="container">
-    <div class="contact-grid">
+    <div class="section-label">The Problem</div>
+    <h2>Employers Spend Billions on Wellness.<br>No One Can Prove It Works.</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">⚡</div>
+        <h3>Wellness Programs Enroll Volunteers</h3>
+        <p>Traditional programs recruit self-selected employees who are already health-conscious — systematically missing the highest-risk individuals who are actually driving plan costs.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">📊</div>
+        <h3>No Claims Linkage Exists</h3>
+        <p>Wellness vendors track engagement metrics — steps, screenings, sessions. Not one connects those outcomes back to the employer's actual health plan claims to document financial ROI.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">💰</div>
+        <h3>CFOs Renew on Faith</h3>
+        <p>Every renewal conversation is the same: did this reduce our costs? No wellness program has ever produced a documented, claims-linked answer to that question. Until now.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="contact-form-wrap">
-        <h2>Send Us a Message</h2>
-        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" name="firstName" placeholder="Jane" required>
-            </div>
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" name="lastName" placeholder="Smith" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" name="email" placeholder="jane@company.com" required>
-          </div>
-          <div class="form-group">
-            <label>Company / Organization</label>
-            <input type="text" name="company" placeholder="Acme Corp">
-          </div>
-          <div class="form-group">
-            <label>I am a...</label>
-            <select name="role">
-              <option value="">Select your role</option>
-              <option value="employer">Employer / HR / Benefits Director</option>
-              <option value="broker">Benefits Broker / Consultant</option>
-              <option value="tpa">Third Party Administrator (TPA)</option>
-              <option value="stoploss">Stop-Loss Carrier / Underwriter</option>
-              <option value="pbm">Pharmacy Benefit Manager (PBM)</option>
-              <option value="investor">Investor</option>
-              <option value="researcher">Academic / Researcher</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Approximate Covered Lives (if employer)</label>
-            <select name="lives">
-              <option value="">Select range</option>
-              <option value="2000-5000">2,000 – 5,000</option>
-              <option value="5000-10000">5,000 – 10,000</option>
-              <option value="10000-20000">10,000 – 20,000</option>
-              <option value="20000+">20,000+</option>
-              <option value="na">Not applicable</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea name="message" rows="4" placeholder="Tell us about your plan, your current wellness approach, or what you'd like to learn about Gluva..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary full">Send Message</button>
-          <p class="form-note">We respond to all inquiries within one business day. Your information is kept confidential and is not shared with third parties.</p>
-        </form>
-        <div class="form-success" id="formSuccess" style="display:none;">
-          <div class="success-icon">✓</div>
-          <h3>Message Received</h3>
-          <p>Thank you for reaching out. We will be in touch within one business day.</p>
+<!-- HOW IT WORKS -->
+<section class="hiw" id="how-it-works">
+  <div class="container">
+    <div class="section-label">How It Works</div>
+    <h2>Claims-Driven. Data-Proven.<br>CFO-Ready.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Identify High-Risk Employees from Claims</h3>
+          <p>Gluva analyzes your TPA claims extract and PBM drug utilization data to identify employees with pre-diabetic indicators, metabolic pharmacy spend, and GLP-1 exposure — before they cost your plan more.</p>
+          <div class="step-badge">No voluntary screening. No health fairs. Pure claims intelligence.</div>
         </div>
       </div>
-
-      <div class="contact-info">
-        <div class="ci-card">
-          <h3>Early Partner Program</h3>
-          <p>Gluva is currently accepting a limited number of early employer and broker partners. Early partners receive:</p>
-          <ul>
-            <li>Priority access to the employer dashboard</li>
-            <li>Dedicated onboarding and implementation support</li>
-            <li>Input on platform features and reporting</li>
-            <li>Preferred pricing for Year 1</li>
-            <li>Co-development of the claims linkage methodology</li>
-          </ul>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>Deploy CGM-Guided Intervention</h3>
+          <p>High-risk employees receive a continuous glucose monitor and two personalized dietitian sessions anchored to their actual glucose data — not generic nutrition advice. Interventions concentrate on the employees with the highest room for measurable improvement.</p>
+          <div class="step-badge">Abbott Lingo CGM. Two-session protocol. 90-day program.</div>
         </div>
-
-        <div class="ci-card">
-          <h3>Who We Work With</h3>
-          <div class="ci-item">
-            <div class="ci-icon">🏢</div>
-            <div>
-              <strong>Self-Funded Employers</strong>
-              <span>2,000 – 20,000 covered lives</span>
-            </div>
-          </div>
-          <div class="ci-item">
-            <div class="ci-icon">🤝</div>
-            <div>
-              <strong>Benefits Brokers</strong>
-              <span>Mid-market employer focus</span>
-            </div>
-          </div>
-          <div class="ci-item">
-            <div class="ci-icon">🛡️</div>
-            <div>
-              <strong>Stop-Loss Carriers</strong>
-              <span>Data partnership inquiries</span>
-            </div>
-          </div>
-          <div class="ci-item">
-            <div class="ci-icon">🔬</div>
-            <div>
-              <strong>Research Partners</strong>
-              <span>Academic collaboration</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="ci-card">
-          <h3>Direct Contact</h3>
-          <a href="mailto:info@gluva.com" class="ci-email">info@gluva.com</a>
-          <p class="ci-location">Chicago, Illinois</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>Link Outcomes Back to Claims</h3>
+          <p>After one plan year, Gluva pulls an updated claims extract and compares the intervention cohort against a waitlist control group. The difference in cost trajectory is your documented ROI — in cost-per-member terms your CFO can present at any board meeting.</p>
+          <div class="step-badge">Peer-reviewed methodology. Publishable results. Board-ready reporting.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PLATFORM PREVIEW -->
+<section class="platform" id="platform">
+  <div class="container">
+    <div class="section-label">The Platform</div>
+    <h2>The Employer Dashboard<br><span class="accent">Is In Development</span></h2>
+    <p class="platform-sub">Gluva's employer dashboard is currently in active development. Early employer partners will receive priority access and input on the features that matter most to their plan administration and reporting needs.</p>
+
+    <div class="dashboard-preview">
+      <div class="dash-header">
+        <div class="dash-logo">G</div>
+        <div class="dash-title">
+          <div class="dash-company">Acme Corp — Cycle 2</div>
+          <div class="dash-sub">Executive Overview · 2,000 covered lives · Ages 35+</div>
+        </div>
+        <div class="dash-badge live">● Live</div>
+      </div>
+      <div class="dash-metrics">
+        <div class="dash-metric">
+          <div class="dm-label">Avg Glucose (mg/dL)</div>
+          <div class="dm-val">101</div>
+          <div class="dm-delta green">↓ 3.2 vs baseline</div>
+        </div>
+        <div class="dash-metric">
+          <div class="dm-label">Time-in-Range</div>
+          <div class="dm-val">78<span class="dm-unit">%</span></div>
+          <div class="dm-delta green">↑ 6pp vs baseline</div>
+        </div>
+        <div class="dash-metric">
+          <div class="dm-label">% Improving</div>
+          <div class="dm-val">62<span class="dm-unit">%</span></div>
+          <div class="dm-delta green">↑ 14pp vs Cycle 1</div>
+        </div>
+        <div class="dash-metric">
+          <div class="dm-label">Medical Costs Avoided</div>
+          <div class="dm-val">$1.35<span class="dm-unit">M</span></div>
+          <div class="dm-delta green">↑ 52% vs Year 1</div>
+        </div>
+        <div class="dash-metric">
+          <div class="dm-label">Total Annual Savings</div>
+          <div class="dm-val">$2.24<span class="dm-unit">M</span></div>
+          <div class="dm-delta green">↑ 34% vs Year 1</div>
+        </div>
+        <div class="dash-metric highlight">
+          <div class="dm-label">ROI Multiple</div>
+          <div class="dm-val gold">4.6<span class="dm-unit">×</span></div>
+          <div class="dm-delta gold">↑ from 3.1× Year 1</div>
+        </div>
+      </div>
+      <div class="dash-footer">
+        Dashboard preview — representative data only. Actual dashboard in development. Early access available for qualified employer partners.
+      </div>
+    </div>
+
+    <div class="platform-features">
+      <div class="pf-item">
+        <div class="pf-icon">🎯</div>
+        <div class="pf-label">Risk Stratification</div>
+        <div class="pf-body">Claims-based identification of high-risk employees before deployment of any device or clinical resource</div>
+      </div>
+      <div class="pf-item">
+        <div class="pf-icon">📈</div>
+        <div class="pf-label">Population Tracking</div>
+        <div class="pf-body">Real-time cohort progress monitoring across all enrolled employees with glucose trend visualization</div>
+      </div>
+      <div class="pf-item">
+        <div class="pf-icon">💡</div>
+        <div class="pf-label">Automated Alerts</div>
+        <div class="pf-body">Threshold-triggered emails to HR and broker when cohort risk grows, sessions are missed, or stop-loss proximity is detected</div>
+      </div>
+      <div class="pf-item">
+        <div class="pf-icon">📋</div>
+        <div class="pf-label">CFO ROI Report</div>
+        <div class="pf-body">Annual board-ready report showing program cost, claims savings, net ROI, and return multiple — ready for stop-loss renewal</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="research" id="research">
+  <div class="container">
+    <div class="section-label">The Evidence Base</div>
+    <h2>Built on Peer-Reviewed Research</h2>
+    <p class="research-sub">Gluva's financial model is anchored to published clinical and economic studies — not vendor marketing claims. Every savings assumption traces to a named study and a documented methodology.</p>
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="rc-journal">Diabetes Care · ADA 2025</div>
+        <h3>NDPP Real-World Cost-Effectiveness</h3>
+        <p>Kuo et al. — N=5,948 employees with prediabetes in employer-sponsored health plans. $4,552 in direct medical savings per enrollee over 2 years. 88% probability program was cost-saving. 2.8 percentage-point absolute diabetes risk reduction.</p>
+        <div class="rc-tag">Primary savings anchor</div>
+      </div>
+      <div class="research-card">
+        <div class="rc-journal">JMCP · January 2025</div>
+        <h3>CGM and Healthcare Utilization Outcomes</h3>
+        <p>Aetna retrospective analysis — N=7,336 patients with diabetes. CGM initiation associated with −31% all-cause hospitalizations, −67% diabetes-related admissions, and −40% diabetes-related ED visits. All findings p&lt;0.0001.</p>
+        <div class="rc-tag">Utilization reduction basis</div>
+      </div>
+      <div class="research-card">
+        <div class="rc-journal">Diabetes Care · ADA 2024</div>
+        <h3>Economic Costs of Diabetes in the US</h3>
+        <p>Parker et al. — Average annual cost per diagnosed diabetes patient: $22,540 in direct medical and pharmacy costs. People with diabetes have medical expenditures 2.6× higher than those without. GLP-1 therapy adds $18,000–$30,000+ per member per year at commercial plan rates.</p>
+        <div class="rc-tag">GLP-1 avoidance basis</div>
+      </div>
+    </div>
+
+    <div class="research-pilot">
+      <div class="rp-badge">Active Research</div>
+      <h3>Community College Pilot Study — In Development</h3>
+      <p>Gluva is developing a prospective cohort pilot study in a community college population, ages 18–22, with elevated glucose or BMI — a population that is pre-diabetic, largely unscreened, and understudied. We are pursuing an academic partnership with a major research university for IRB co-investigator designation and peer-reviewed publication. This study will be the first CGM-guided intervention documented specifically in a community college student population.</p>
+      <div class="rp-specs">
+        <span>100–120 participants</span>
+        <span>Prospective cohort design</span>
+        <span>Waitlist control group</span>
+        <span>90-day protocol</span>
+        <span>Abbott Lingo CGM</span>
+        <span>Two dietitian sessions</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="audience">
+  <div class="container">
+    <div class="section-label">Who It's For</div>
+    <h2>Built for the Self-Funded<br>Employer Ecosystem</h2>
+    <div class="audience-grid">
+      <div class="aud-card">
+        <div class="aud-icon">🏢</div>
+        <h3>Self-Funded Employers</h3>
+        <p>2,000 to 20,000 covered lives. You bear 100% of your plan's claims cost. Gluva gives your CFO the documented ROI that justifies the wellness budget and reduces the cost trajectory.</p>
+      </div>
+      <div class="aud-card">
+        <div class="aud-icon">🤝</div>
+        <h3>Benefits Brokers</h3>
+        <p>Differentiate your practice with a wellness program that produces a board-ready ROI report at every renewal. No more renewing on faith. Your employers get proof — you get retention.</p>
+      </div>
+      <div class="aud-card">
+        <div class="aud-icon">🛡️</div>
+        <h3>Stop-Loss Carriers</h3>
+        <p>Gluva's claims-linked outcomes data gives you documented evidence of risk reduction in the employer's highest-cost cohort — supporting more favorable underwriting at renewal.</p>
+      </div>
+      <div class="aud-card">
+        <div class="aud-icon">📁</div>
+        <h3>TPAs & Plan Administrators</h3>
+        <p>Gluva's standard claims extract format works with any TPA. One data authorization request produces the baseline needed to identify high-risk employees and document program outcomes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-bg">
+    <div class="cta-orb"></div>
+  </div>
+  <div class="container">
+    <div class="cta-inner">
+      <div class="section-label light">Get Started</div>
+      <h2>Ready to Measure What<br>Your Wellness Program Actually Does?</h2>
+      <p>Gluva is currently accepting early employer and broker partners. Early partners receive priority dashboard access, dedicated onboarding support, and input on platform development.</p>
+      <a href="contact.html" class="btn-primary large">Request Early Access</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
         <div class="footer-logo">GLUVA</div>
         <div class="footer-tagline">Employer Risk Intelligence</div>
-        <p class="footer-desc">Connecting CGM wellness outcomes to employer health plan claims data.</p>
+        <p class="footer-desc">Connecting CGM wellness outcomes to employer health plan claims data. Making wellness ROI measurable for the first time.</p>
       </div>
       <div class="footer-links">
         <div class="fl-col">
           <div class="fl-label">Platform</div>
-          <a href="index.html#how-it-works">How It Works</a>
-          <a href="index.html#platform">Dashboard</a>
-          <a href="index.html#research">Research</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#platform">Employer Dashboard</a>
+          <a href="#research">Research Basis</a>
         </div>
         <div class="fl-col">
           <div class="fl-label">Company</div>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html">Contact Us</a>
           <a href="contact.html">Early Access</a>
-          <a href="privacy.html">Privacy</a>
+          <a href="contact.html">Partner Inquiries</a>
         </div>
       </div>
     </div>
