@@ -563,3 +563,69 @@ a { color: inherit; text-decoration: none; }
   .dash-metrics { grid-template-columns: 1fr; }
   .hero-stats { flex-direction: column; gap: 16px; }
 }
+
+/* ── LAUNCH BANNER ───────────────────────────────── */
+.launch-banner {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  background: var(--navy);
+  border-bottom: 1px solid rgba(13,122,142,0.4);
+  padding: 9px 24px;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px;
+  color: rgba(255,255,255,0.65);
+}
+.lb-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--gold);
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+.lb-link {
+  color: var(--teal); font-weight: 600;
+  transition: color .2s;
+  white-space: nowrap;
+}
+.lb-link:hover { color: white; }
+.nav { top: 36px; }
+.hero { padding-top: 156px; }
+.contact-hero { padding-top: 196px; }
+
+/* ── STEP DISCLAIMER ─────────────────────────────── */
+.step-disclaimer {
+  margin-top: 10px;
+  font-size: 12px; color: #94A3B8;
+  font-style: italic; line-height: 1.6;
+  border-left: 2px solid var(--line);
+  padding-left: 12px;
+}
+
+/* ── DASHBOARD DEV BADGE ─────────────────────────── */
+.dash-dev-badge {
+  background: rgba(217,119,6,0.1);
+  border-bottom: 1px solid rgba(217,119,6,0.2);
+  padding: 10px 28px;
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--gold);
+}
+.ddb-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--gold); flex-shrink: 0;
+}
+.dash-badge.preview {
+  color: var(--gold);
+  background: rgba(217,119,6,0.12);
+  border: 1px solid rgba(217,119,6,0.25);
+}
+
+/* ── FOOTER DISCLAIMER ───────────────────────────── */
+.footer-disclaimer {
+  font-size: 11px; color: rgba(255,255,255,0.22);
+  line-height: 1.7; padding: 20px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin: 0 0 0;
+}
+
+/* UPDATE footer-bottom spacing */
+.footer-bottom { margin-top: 0; padding-top: 20px; }
