@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Gluva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">GLUVA</a>
+    <div class="nav-links">
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#platform">Platform</a>
+      <a href="index.html#research">Research</a>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<section class="contact-hero">
+  <div class="container">
+    <div class="section-label">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: April 2026</p>
+  </div>
+</section>
+
+<section class="privacy-body">
+  <div class="container">
+    <div class="privacy-content">
+      <h2>Overview</h2>
+      <p>Gluva, a product of Self Fund Platforms LLC, is committed to protecting the privacy of individuals and organizations that interact with our platform. This policy describes how we collect, use, and protect information on our website and platform.</p>
+
+      <h2>Information We Collect</h2>
+      <p>On our website, we collect information you voluntarily provide through our contact form — including your name, email address, company name, and role. We do not collect any health information through this website.</p>
+      <p>Our employer wellness platform operates under separate Business Associate Agreements with each employer plan sponsor and handles health plan claims data exclusively under those HIPAA-compliant agreements.</p>
+
+      <h2>How We Use Information</h2>
+      <p>Information submitted through our contact form is used solely to respond to your inquiry and communicate with you about Gluva's products and services. We do not sell or share your contact information with third parties for marketing purposes.</p>
+
+      <h2>Health Data</h2>
+      <p>Employer health plan claims data and individual participant wellness data is handled under HIPAA-compliant Business Associate Agreements with each employer plan sponsor. All health data is used solely for the purpose of delivering the Gluva program as described in the applicable service agreement. Individual participant data is never sold or disclosed to third parties without authorization.</p>
+
+      <h2>Cookies and Analytics</h2>
+      <p>This website may use basic analytics to understand visitor behavior and improve our content. We do not use advertising cookies or share analytics data with advertising networks.</p>
+
+      <h2>Contact</h2>
+      <p>For privacy inquiries, please contact us at <a href="mailto:info@gluva.com">info@gluva.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0;">
+      <div class="fb-left">© 2026 Gluva. All rights reserved. A Self Fund Platforms LLC product.</div>
+      <div class="fb-right"><a href="index.html">Home</a><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
